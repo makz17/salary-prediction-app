@@ -13,10 +13,9 @@ le_country = data['le_country']
 le_education = data['le_education']
 
 def show_predict_page():
-    st.title("Software Developer Salary Prediction")
-    
-    st.write("""### We need some information to predict the salary""")
-    
+
+    st.markdown("<h2 style='text-align: center; font-weight: bold;'>Software Developer Salary Prediction</h2>", unsafe_allow_html=True)
+    st.markdown("<h3 style='text-align: center;'>We need some information to predict salary:</h3>", unsafe_allow_html=True)
     countries = (
         "United States",
         "Canada",

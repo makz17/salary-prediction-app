@@ -56,12 +56,7 @@ df = load_data()
 
 def show_explore_page():
     st.title("Explore Software Engineer Salaries")
-
-    st.write(
-        """
-    ### Stack Overflow Developer Survey 2020
-    """
-    )
+    st.markdown("<h3 style='text-align: center;'>Based on Stack Overflow's Developer Survey 2020</h3>", unsafe_allow_html=True)
     country_counts = df["Country"].value_counts()
 
     fig = px.pie(
